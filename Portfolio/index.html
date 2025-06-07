@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iliesse Essediri - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>Iliesse Essediri</span>
+            </div>
+    <ul class="nav-menu">
+        <li class="nav-item">
+            <a href="#accueil" class="nav-link">Accueil</a>
+        </li>
+        <li class="nav-item">
+            <a href="#a-propos" class="nav-link">À propos</a>
+        </li>
+        <li class="nav-item">
+            <a href="projet.html" class="nav-link">Projets</a>
+        </li>
+        <li class="nav-item">
+            <a href="sae.html" class="nav-link">Projet scolaire</a>
+        </li>
+        <li class="nav-item">
+            <a href="competences.html" class="nav-link">Compétences</a>
+        </li>
+        <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+        <button class="theme-toggle" id="themeToggle" aria-label="Basculer le mode sombre">
+    <i class="fas fa-moon"></i>
+</button>
+    </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Bonjour, je suis <span class="highlight">Iliesse Essediri</span>
+                </h1>
+                <p class="hero-subtitle">Étudiant en BUT Informatique</p>
+                <p class="hero-description">
+                    Passionné par le développement logiciel et les nouvelles technologies, 
+                    je me spécialise dans la création d'applications innovantes et l'informatique moderne.
+                </p>
+                <div class="hero-buttons">
+                    <a href="projet.html" class="btn btn-primary">Voir mes projets</a>
+                    <a href="contact.html" class="btn btn-secondary">Me contacter</a>
+                    <a href="fichier_pdf/Iliesse_Essediri.pdf" class="btn btn-secondary" download="CV_Iliesse_Essediri.pdf" target="_blank">
+                        <i class="fas fa-download"></i> Télécharger mon CV
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-avatar">
+                        <img src="Image/Moi.png" alt="Photo de moi" class="profile-photo">
+                    </div>
+                    <div class="floating-elements">
+                        <div class="floating-icon" style="--delay: 0s;">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <div class="floating-icon" style="--delay: 1s;">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="floating-icon" style="--delay: 2s;">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="floating-icon" style="--delay: 3s;">
+                            <i class="fas fa-database"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="a-propos" class="about">
+        <div class="container">
+            <h2 class="section-title">À propos de moi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        <strong>Déterminé, sérieux, autonome et conscient du travail qui m'attend !</strong>
+                    </p>
+                    <p>
+                        Actuellement en 1ère année de BUT Informatique à l'I.U.T.2 de Grenoble, 
+                        je me passionne pour le développement logiciel et les technologies numériques. 
+                        Diplômé d'un Bac STI2D option SIN, j'ai acquis une solide base technique que 
+                        je continue à développer.
+                    </p>
+                    <p>
+                        Mon expérience professionnelle chez Auchan Drive m'a permis de développer 
+                        mes compétences en gestion d'équipe et en relation client, des atouts 
+                        précieux dans le domaine informatique.
+                    </p>
+                </div>
+                <div class="about-info">
+                    <div class="info-card">
+                        <h3>Formation</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2024-2025</div>
+                                <div class="timeline-content">
+                                    <h4>BUT Informatique</h4>
+                                    <p>I.U.T.2 Grenoble</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2021-2024</div>
+                                <div class="timeline-content">
+                                    <h4>Bac STI2D option SIN</h4>
+                                    <p>Lycée Polyvalent Algoud-Laffemas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <h3>Centres d'intérêt</h3>
+                        <div class="interests">
+                            <span class="interest-tag"><i class="fas fa-futbol"></i> Football</span>
+                            <span class="interest-tag"><i class="fas fa-dumbbell"></i> Musculation</span>
+                            <span class="interest-tag"><i class="fas fa-fist-raised"></i> Taekwondo</span>
+                            <span class="interest-tag"><i class="fas fa-paint-brush"></i> Dessin</span>
+                            <span class="interest-tag"><i class="fas fa-laptop-code"></i> Informatique</span>
+                            <span class="interest-tag"><i class="fas fa-plane"></i> Voyages</span>
+                            <span class="interest-tag"><i class="fas fa-music"></i> Musique</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <div class="footer-contact">
+                    <p><i class="fas fa-envelope"></i> iliesseessediri@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +33 6 16 83 18 66</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 4 Rue Pierre Semard, 317B</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Liens</h3>
+            <div class="footer-links">
+              <ul>
+                 <li><a href="index.html#accueil">Accueil</a></li>
+                 <li><a href="index.html#a-propos">À propos</a></li>
+               <li><a href="projet.html">Projets</a></li>
+                 <li><a href="sae.html">Projet scolaire</a></li>
+              <li><a href="competences.html">Compétences</a></li>
+              <li><a href="contact.html">Contact</a></li>
+             </ul>
+            </div>
+
+            </div>
+            <div class="footer-section">
+                <h3>Réseaux sociaux</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/iliesse-essediri-ab373b36a/" class="social-link" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Iliessees" class="social-link" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                    <a href="mailto:iliesseessediri@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/iliesse_es/" class="social-link" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-legal">
+                <p>&copy; 2025 Iliesse Essediri. Tous droits réservés.</p>
+                <div class="legal-links">
+                    <a href="#" onclick="openLegalModal('mentions')">Mentions légales</a>
+                    <a href="#" onclick="openLegalModal('privacy')">Politique de confidentialité</a>
+                    <a href="#" onclick="openLegalModal('cookies')">Politique des cookies</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Modal pour les projets -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content pixel-modal">
+            <span class="close pixel-close">&times;</span>
+            <div id="modalBody" class="modal-body-centered">
+                <!-- Le contenu sera injecté par JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal pour les mentions légales -->
+    <div id="legalModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="legalModalBody">
+                <!-- Le contenu sera injecté par JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
