@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Iliesse Essediri</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>Iliesse Essediri</span>
+            </div>
+    <ul class="nav-menu">
+        <li class="nav-item">
+            <a href="index.html#accueil" class="nav-link">Accueil</a>
+        </li>
+        <li class="nav-item">
+            <a href="index.html#a-propos" class="nav-link">À propos</a>
+        </li>
+        <li class="nav-item">
+            <a href="projet.html" class="nav-link">Projets</a>
+        </li>
+        <li class="nav-item">
+            <a href="sae.html" class="nav-link">Projet scolaire</a>
+        </li>
+        <li class="nav-item">
+            <a href="competences.html" class="nav-link">Compétences</a>
+        </li>
+        <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+        <button class="theme-toggle" id="themeToggle" aria-label="Basculer le mode sombre">
+    <i class="fas fa-moon"></i>
+</button>
+    </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: 60vh;">
+        <div class="container">
+            <div class="hero-content" style="grid-template-columns: 1fr; text-align: center;">
+                <div class="hero-text">
+                    <h1 class="hero-title">Mes <span class="highlight">Projets</span></h1>
+                    <p class="hero-subtitle">Portfolio de mes réalisations</p>
+                    <p class="hero-description">
+                        Découvrez mes projets professionnels et académiques, allant de la réparation d'ordinateurs 
+                        à la gestion d'équipe, en passant par le développement informatique.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Floating elements -->
+        <div class="floating-elements">
+            <i class="floating-icon fas fa-tools" style="--delay: 0s;"></i>
+            <i class="floating-icon fas fa-code" style="--delay: 1s;"></i>
+            <i class="floating-icon fas fa-users" style="--delay: 2s;"></i>
+            <i class="floating-icon fas fa-laptop" style="--delay: 3s;"></i>
+        </div>
+    </section>
+
+    <!-- Section Projets Détaillée -->
+    <section id="projets" class="projects">
+        <div class="container">
+            <h2 class="section-title">Mes Réalisations</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-project="1">
+                    <div class="project-image">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Réparation d'Ordinateurs</h3>
+                        <p>Stage de réparation incluant diagnostic, remplacement de composants et conseil client.</p>
+                        <div class="project-tags">
+                            <span class="tag">Hardware</span>
+                            <span class="tag">Diagnostic</span>
+                            <span class="tag">Maintenance</span>
+                        </div>
+                        <button class="btn-project" onclick="openProjectModal(1)">Voir détails</button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="2">
+                    <div class="project-image">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Gestion Auchan Drive</h3>
+                        <p>Expérience professionnelle en préparation de commandes et gestion d'équipe.</p>
+                        <div class="project-tags">
+                            <span class="tag">Management</span>
+                            <span class="tag">Logistique</span>
+                            <span class="tag">Formation</span>
+                        </div>
+                        <button class="btn-project" onclick="openProjectModal(2)">Voir détails</button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="3">
+                    <div class="project-image">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Projets BUT Informatique</h3>
+                        <p>Projets académiques en développement logiciel et programmation.</p>
+                        <div class="project-tags">
+                            <span class="tag">Programmation</span>
+                            <span class="tag">Algorithmique</span>
+                            <span class="tag">Base de données</span>
+                        </div>
+                        <button class="btn-project" onclick="openProjectModal(3)">Voir détails</button>
+                    </div>
+                </div>
+
+                <!-- Nouveau projet SAE -->
+                <div class="project-card" data-project="4">
+                    <div class="project-image">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>SAE S2.03 - Administration Système</h3>
+                        <p>Guide d'installation complet : Debian, Apache, PostgreSQL, PHP et PHPpgAdmin.</p>
+                        <div class="project-tags">
+                            <span class="tag">Linux</span>
+                            <span class="tag">Apache</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">PHP</span>
+                        </div>
+                        <a href="sae.html" class="btn-project">Voir le projet</a>
+                    </div>
+                </div>
+
+                <!-- Projets futurs -->
+                <div class="project-card future-project">
+                    <div class="project-image">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Projets à venir</h3>
+                        <p>De nouveaux projets passionnants sont en cours de développement.</p>
+                        <div class="project-tags">
+                            <span class="tag">En cours</span>
+                            <span class="tag">Innovation</span>
+                        </div>
+                        <button class="btn-project" disabled>Bientôt disponible</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Témoignages/Retours -->
+    <section class="about" style="background: grey;">
+        <div class="container">
+            <h2 class="section-title">Retour d'expérience</h2>
+            <div class="about-content">
+                <div class="info-card">
+                    <h3><i class="fas fa-lightbulb"></i> Apprentissages clés</h3>
+                    <p>Chaque projet m'a permis de développer des compétences spécifiques et d'acquérir une expérience pratique précieuse. De la résolution de problèmes techniques à la gestion d'équipe, j'ai pu mettre en pratique mes connaissances théoriques.</p>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fas fa-target"></i> Objectifs futurs</h3>
+                    <p>Fort de ces expériences, je souhaite continuer à développer mes compétences en développement logiciel et en administration système, tout en explorant de nouveaux domaines comme l'intelligence artificielle et la cybersécurité.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <div class="footer-contact">
+                    <p><i class="fas fa-envelope"></i> iliesseessediri@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +33 6 16 83 18 66</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 4 Rue Pierre Semard, 317B</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Liens</h3>
+            <div class="footer-links">
+              <ul>
+                 <li><a href="index.html#accueil">Accueil</a></li>
+                 <li><a href="index.html#a-propos">À propos</a></li>
+               <li><a href="projet.html">Projets</a></li>
+                 <li><a href="sae.html">Projet scolaire</a></li>
+              <li><a href="competences.html">Compétences</a></li>
+              <li><a href="contact.html">Contact</a></li>
+             </ul>
+            </div>
+
+            </div>
+            <div class="footer-section">
+                <h3>Réseaux sociaux</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/iliesse-essediri-ab373b36a/" class="social-link" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Iliessees" class="social-link" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                    <a href="mailto:iliesseessediri@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/iliesse_es/" class="social-link" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-legal">
+                <p>&copy; 2025 Iliesse Essediri. Tous droits réservés.</p>
+                <div class="legal-links">
+                    <a href="#" onclick="openLegalModal('mentions')">Mentions légales</a>
+                    <a href="#" onclick="openLegalModal('privacy')">Politique de confidentialité</a>
+                    <a href="#" onclick="openLegalModal('cookies')">Politique des cookies</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Modal pour les projets -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content pixel-modal">
+            <span class="close pixel-close">&times;</span>
+            <div id="modalBody" class="modal-body-centered">
+                <!-- Le contenu sera injecté par JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal pour les mentions légales -->
+    <div id="legalModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="legalModalBody">
+                <!-- Le contenu sera injecté par JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
